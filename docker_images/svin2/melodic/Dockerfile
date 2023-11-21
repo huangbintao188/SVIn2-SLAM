@@ -60,6 +60,7 @@ RUN mkdir -p /usr/app/svin2_ws \
 && mv /usr/app/svin2_ws/SVIn2 /usr/app/svin2_ws/src \
 && cd /usr/app/svin2_ws/src \
 && git clone https://github.com/quattrinili/imagenex831l \
+&& git clone --branch ros-noetic git@github.com:AutonomousFieldRoboticsLab/sonar_rviz_plugin.git \
 # OKVIS cmake settings
 && sed -i '13s/OFF/ON/g' /usr/app/svin2_ws/src/okvis_ros/okvis/CMakeLists.txt \
 && sed -i '15s/OFF/ON/g' /usr/app/svin2_ws/src/okvis_ros/okvis/CMakeLists.txt \
